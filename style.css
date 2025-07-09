@@ -1,0 +1,151 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+
+}
+.header{
+    background-color:#ffffff;
+    padding: 16px 32px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px rgb(0, 0,0.5);
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+.logo{
+    font-size: 25px;
+    font-weight: bold;
+    color: aquamarine;
+
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.nav-links a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 500px;
+    transition: color 0.3s ease;
+}
+.nav-links a:hover{
+    color: #4949;
+}
+
+.hero{
+    background: linear-gradient(to right,#49b96e,#38a36b);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+
+}
+.hero-content h1{
+    font-size: 52px;
+    margin-bottom: 20px;
+    font-family: 700;
+
+}
+.hero-content p{
+    font-size: 22px;
+    margin-bottom: 40px;
+    max-width: 700;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.btn{
+    background-color: #25bc1d;
+    color: #f9f9f9;
+    border: 2px solid transparent;
+    padding: 14px 38px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+.btn:hover{
+    background-color: antiquewhite;
+    color: black;
+    border-color: #f4efef;
+
+
+}
+.features{
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #ffffff;
+
+}
+.feature-grid{
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(280px, 1fr));
+gap: 36px;
+max-width: 1200px;
+margin: auto;
+
+}
+.feature-card{
+background-color: #f4efef;
+box-shadow:0 4px 12px rgb(red, green, 0.05);
+padding: 30px;
+border-radius: 10px;
+transition:transform 0.2s ease ;
+
+}
+
+.feature-card:hover{
+transform: translate(-5px);
+
+}
+.feature-card i{
+    font-size: 48px;
+    color: #38a36b;
+    margin-bottom: 16px;
+}
+
+.download{
+    text-align: center;
+    padding: 60px 20px;
+    background-color: antiquewhite;
+
+
+}
+.download-buttons{
+    margin-top: 20px;
+
+}
+
+footer{
+    color: #f4efef;
+    text-align: center;
+    background-color: #333;
+    padding: 30px 20px;
+    font-size: 15px;
+
+}
+@media (max-width: 768px) {
+
+.nav-links {
+ display: none;
+
+}
+.hero-content h1{
+    font-size: 36px;
+}
+
+}
